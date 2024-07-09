@@ -1,5 +1,5 @@
 {
-  "name": "follow",
+  "name": "pxt-follow",
   "description": "An extension to make a NPC follow another player wihtin a certain distance.",
   "files": [
     "follow.ts"
