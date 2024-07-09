@@ -8,7 +8,7 @@ namespace follower {
     * Set the follower sprite
     */
   //% blockId = set_follower block = "set follower %sprite"
-  //% weight = 100
+  //% weight=100 color=#492971
   export function setFollower(sprite: Sprite) {
     follower = sprite;
   }
@@ -17,7 +17,7 @@ namespace follower {
     * Set the target sprite
     */
   //% blockId = set_target block = "set target %sprite"
-  //% weight = 90
+  //% weight=90 color=#492971
   export function setTarget(sprite: Sprite) {
     target = sprite;
   }
@@ -26,7 +26,7 @@ namespace follower {
     * Set the follow distance
     */
   //% blockId = set_distance block = "set follow distance %distance"
-  //% weight = 80
+  //% weight=80 color=#492971
   export function setDistance(distance: number) {
     followDistance = distance;
   }
@@ -35,7 +35,7 @@ namespace follower {
     * Update the follower position
     */
   //* blockId = update_follower block = "update follower"
-  //% weight = 70
+  //% weight=70 color=#492971
   export function updateFollower() {
     if (follower && target) {
       let distance = Math.sqrt(Math.pow(follower.x - target.x, 2) + Math.pow(follower.y - target.y, 2));
